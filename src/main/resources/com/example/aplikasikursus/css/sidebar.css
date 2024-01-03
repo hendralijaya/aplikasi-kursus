@@ -1,0 +1,20 @@
+.custom-button {
+    -fx-background-color: #f2f2f2;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 10px;
+    -fx-border-insets: 10px 10px;
+    -fx-background-insets: 10px 10px;
+    }
+
+.custom-button:pressed {
+    -fx-background-color: #CCCCCC;
+}
+
+.custom-button.active {
+    -fx-background-color: #CCCCCC;
+}
+
+.sidebar {
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #000000;
+}

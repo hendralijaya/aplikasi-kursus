@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/sidebar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplikasikursus.controller.LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../css/sidebar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplikasikursus.controller.LoginController">
    <left>
       <VBox maxHeight="1000.0" maxWidth="240.0" minHeight="400.0" minWidth="120.0" prefHeight="400.0" prefWidth="120.0" styleClass="sidebar" BorderPane.alignment="CENTER">
          <children>
@@ -27,7 +27,7 @@
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/house-chimney-solid.png" />
+                              <Image url="@../../icons/house-chimney-solid.png" />
                            </image>
                         </ImageView>
                      </graphic></Button>
@@ -35,7 +35,7 @@
                      <graphic>
                         <ImageView fitHeight="21.0" fitWidth="7.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/info-solid.png" />
+                              <Image url="@../../icons/info-solid.png" />
                            </image>
                         </ImageView>
                      </graphic></Button>
@@ -47,7 +47,7 @@
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/right-to-bracket-solid.png" />
+                              <Image url="@../../icons/right-to-bracket-solid.png" />
                            </image>
                         </ImageView>
                      </graphic></Button>
@@ -55,7 +55,7 @@
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/user-plus-solid.png" />
+                              <Image url="@../../icons/user-plus-solid.png" />
                            </image>
                         </ImageView>
                      </graphic></Button>
@@ -93,7 +93,7 @@
                <children>
                   <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
                      <image>
-                        <Image url="@icons/right-to-bracket-solid.png" />
+                        <Image url="@../../icons/right-to-bracket-solid.png" />
                      </image>
                      <viewport>
                         <Rectangle2D />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -14,13 +15,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/dashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplikasikursus.controller.TutorController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplikasikursus.controller.TutorController">
     <left>
         <VBox maxHeight="400.0" maxWidth="240.0" minHeight="200.0" minWidth="120.0" prefHeight="396.0" prefWidth="120.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
             <children>
                 <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@icons/discourse.png" />
+                        <Image url="@../../icons/discourse.png" />
                     </image>
                     <VBox.margin>
                         <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
@@ -28,11 +29,11 @@
                 </ImageView>
                 <AnchorPane maxHeight="300.0" maxWidth="120.0" minHeight="300.0" minWidth="120.0" prefHeight="300.0" prefWidth="120.0">
                     <children>
-                        <Button alignment="BASELINE_LEFT" layoutY="0.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" styleClass="custom-button" text=" Dashboard">
+                        <Button fx:id="dashboardButton" alignment="BASELINE_LEFT" layoutY="0.0" mnemonicParsing="false" onAction="#handleDashboardButton" prefHeight="50.0" prefWidth="120.0" styleClass="custom-button" text=" Dashboard">
                             <graphic>
                                 <ImageView fitHeight="26.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons/th-large-solid.png" />
+                                        <Image url="@../../icons/th-large-solid.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -40,11 +41,11 @@
                                 <Insets />
                             </opaqueInsets>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutY="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" styleClass="custom-button" text=" Data Siswa">
+                        <Button fx:id="dataSiswaButton" alignment="BASELINE_LEFT" layoutY="50.0" mnemonicParsing="false" onAction="#handleDataSiswaButton" prefHeight="50.0" prefWidth="120.0" styleClass="custom-button" text=" Data Siswa">
                             <graphic>
                                 <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons/book-reader-solid.png" />
+                                        <Image url="@../../icons/book-reader-solid.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -52,11 +53,11 @@
                                 <Insets />
                             </opaqueInsets>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutY="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" styleClass="custom-button" text=" Data Tutor">
+                        <Button fx:id="dataTutorButton" alignment="BASELINE_LEFT" layoutY="100.0" mnemonicParsing="false" onAction="#handleDataTutorButton" prefHeight="50.0" prefWidth="120.0" styleClass="custom-button" text=" Data Tutor">
                             <graphic>
                                 <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons/user-graduate-solid.png" />
+                                        <Image url="@../../icons/user-graduate-solid.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -64,11 +65,11 @@
                                 <Insets />
                             </opaqueInsets>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutY="180.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" styleClass="custom-button" text=" Data Kursus">
+                        <Button fx:id="dataKursusButton" alignment="BASELINE_LEFT" layoutY="150.0" mnemonicParsing="false" onAction="#handleDataKursusButton" prefHeight="50.0" prefWidth="120.0" styleClass="custom-button" text=" Data Kursus">
                             <graphic>
                                 <ImageView fitHeight="16.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons/book-solid.png" />
+                                        <Image url="@../../icons/book-solid.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -76,11 +77,11 @@
                                 <Insets />
                             </opaqueInsets>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutY="240.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" styleClass="custom-button" text=" Logout">
+                        <Button fx:id="logoutButton" alignment="BASELINE_LEFT" layoutY="250.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="50.0" prefWidth="120.0" styleClass="custom-button" text=" Logout">
                             <graphic>
                                 <ImageView fitHeight="16.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons/right-from-bracket-solid.png" />
+                                        <Image url="@../../icons/right-from-bracket-solid.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -88,6 +89,18 @@
                                 <Insets />
                             </opaqueInsets>
                         </Button>
+                  <Button fx:id="dataTutorialButton" alignment="BASELINE_LEFT" layoutY="200.0" mnemonicParsing="false" onAction="#handleDataTutorialButton" prefHeight="50.0" prefWidth="120.0" styleClass="custom-button" text=" Data Tutorial">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/book-solid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
                     </children>
                 </AnchorPane>
             </children>
@@ -120,7 +133,7 @@
                     <graphic>
                         <ImageView fitHeight="12.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons/magnifying-glass-solid.png" />
+                                <Image url="@../../icons/magnifying-glass-solid.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -129,7 +142,7 @@
                     <graphic>
                         <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons/user-plus-solid.png" />
+                                <Image url="@../../icons/user-plus-solid.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -137,4 +150,8 @@
             </children>
         </AnchorPane>
     </center>
+   <stylesheets>
+      <URL value="@../../css/dashboard.css" />
+      <URL value="@../../css/sidebar.css" />
+   </stylesheets>
 </BorderPane>

@@ -1,0 +1,30 @@
+.add-button {
+    -fx-border-radius: 45px;
+    -fx-background-color:  #CCCCCC;
+    -fx-background-radius:  45px;
+}
+
+.add-button:pressed {
+    -fx-background-color: #A5A5A5;
+}
+
+
+
+.label-content-dashboard {
+    -fx-padding: 10px 10px;
+    -fx-border-insets: 10px 10px;
+    -fx-background-insets: 10px 10px;
+}
+
+.grid-pane-board {
+    -fx-background-color: lightgray;
+    -fx-vgap: 1;
+    -fx-hgap: 1;
+    -fx-padding: 1;
+}
+
+.logo-content-dashboard {
+    -fx-padding: 5px 10px;
+        -fx-border-insets: 5px 10px;
+        -fx-background-insets: 5px 10px;
+}

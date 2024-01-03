@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplikasikursus.controller.TutorialController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplikasikursus.controller.TutorialHistoryController">
     <left>
         <VBox maxHeight="400.0" maxWidth="240.0" minHeight="200.0" minWidth="120.0" prefHeight="396.0" prefWidth="120.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
             <children>
@@ -110,15 +110,15 @@
             <children>
                 <AnchorPane prefHeight="35.0" prefWidth="480.0" style="-fx-border-color: #000000; -fx-border-width: 1 1 1 0;">
                     <children>
-                        <Label prefHeight="47.0" prefWidth="136.0" styleClass="label-content-dashboard" text="Data Tutorial">
+                        <Label prefHeight="47.0" prefWidth="207.0" styleClass="label-content-dashboard" text="Data Tutorial History">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>
                         </Label>
                     </children>
                 </AnchorPane>
-                <Pagination fx:id="tutorialPagination" layoutY="92.0" maxPageIndicatorCount="5" pageCount="12" prefHeight="280.0" prefWidth="480.0" />
-                <TableView fx:id="tutorialTable" layoutX="10.0" layoutY="108.0" maxHeight="200.0" maxWidth="460.0" minHeight="200.0" minWidth="460.0" prefHeight="200.0" prefWidth="460.0">
+                <Pagination fx:id="tutorialHistoryPagination" layoutY="92.0" maxPageIndicatorCount="5" pageCount="12" prefHeight="280.0" prefWidth="480.0" />
+                <TableView fx:id="tutorialHistoryTable" layoutX="10.0" layoutY="108.0" maxHeight="200.0" maxWidth="460.0" minHeight="200.0" minWidth="460.0" prefHeight="200.0" prefWidth="460.0">
                     <columns>
                         <TableColumn fx:id="namaSiswaColumn" prefWidth="90.0" text="Nama Siswa" />
                         <TableColumn fx:id="namaTutorColumn" prefWidth="100.0" text="Nama Tutor" />
@@ -127,24 +127,6 @@
                         <TableColumn fx:id="actionColumn" maxWidth="120.0" prefWidth="120.0" text="Action" />
                     </columns>
                 </TableView>
-                <Button fx:id="tambahTutorialButton" layoutX="334.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleTambahTutorialButton" prefHeight="32.0" prefWidth="136.0" styleClass="add-button" text="Tambah Tutorial">
-                    <graphic>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../icons/user-plus-solid.png" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-            <Button fx:id="historyButton" layoutX="217.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleHistoryButton" prefHeight="32.0" prefWidth="109.0" styleClass="add-button" text="History">
-               <graphic>
-                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../icons/book-solid.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
             </children>
         </AnchorPane>
     </center>
